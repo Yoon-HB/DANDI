@@ -26,4 +26,12 @@
     <string name="selectSchedule">일정 선택</string>
     <string name="left">&lt;</string>
     <string name="right">&gt;</string>
+    <string name="setTime">시작 시간 설정</string>
+    <string name="setTime_text1">지금까지의 경험을 토대로 \n준비 시작 시간을 정해주세요.</string>
+    <string name="setTime_text2">추가로 알람 기능 관련도 설정해주세요.</string>
+    <string name="startTime">시작 시간</string>
+    <string name="setStart">시작 알림 설정</string>
+    <string name="alarm">알림 유무</string>
+    <string name="repeat">반복 알림</string>
+    <string name="setsound">알림음 설정</string>
 </resources>

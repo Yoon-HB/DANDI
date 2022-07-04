@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    tools:context=".LogActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout1"
+        android:layout_width="420dp"
+        android:layout_height="676dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:background="@drawable/bg_custom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="272dp"
+            android:layout_height="48dp"
+            android:gravity="center"
+            android:text="@string/setTime"
+            android:textColor="#474343"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="45dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar3"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="10dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView14"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="60dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar4"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="7dp"
+            android:background="#3F51B5"
+            tools:layout_editor_absoluteX="60dp"
+            tools:layout_editor_absoluteY="100dp"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="230dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="@string/setTime_text1"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="122dp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setTime_text2"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="172dp" />
+
+        <Button
+            android:layout_width="187dp"
+            android:layout_height="43dp"
+            android:background="@drawable/bg_custom_button"
+            android:text="@string/startTime"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck,TextContrastCheck"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="231dp"
+            tools:textColor="@color/white" />
+
+        <TimePicker
+            android:layout_width="287dp"
+            android:layout_height="138dp"
+            android:timePickerMode="spinner"
+            tools:layout_editor_absoluteX="67dp"
+            tools:layout_editor_absoluteY="274dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="187dp"
+            android:layout_height="43dp"
+            android:background="@drawable/bg_custom_button"
+            android:text="@string/setStart"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck,TextContrastCheck"
+            tools:layout_editor_absoluteX="117dp"
+            tools:layout_editor_absoluteY="411dp"
+            tools:textColor="@color/white" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alarm"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="469dp" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/repeat"
+            android:textColor="@color/black"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="501dp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/setsound"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="92dp"
+            tools:layout_editor_absoluteY="543dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="123dp"
+            android:layout_height="27dp"
+            tools:ignore="MissingConstraints,TouchTargetSizeCheck,SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="199dp"
+            tools:layout_editor_absoluteY="536dp" />
+
+         </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/back"
+        android:textColor="#FFFCFC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.044"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/next"
+        android:textColor="#FFFCFC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
